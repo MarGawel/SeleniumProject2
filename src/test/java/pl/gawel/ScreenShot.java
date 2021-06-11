@@ -11,7 +11,7 @@ import java.util.Date;
 
 public class ScreenShot {
 
-    public final void makeScreenShot() {
+    public static final void makeScreenShot() {
 
         Date dateNow = new Date( );
         SimpleDateFormat formatDate = new SimpleDateFormat ("yyyy.MM.dd_Hmmss");

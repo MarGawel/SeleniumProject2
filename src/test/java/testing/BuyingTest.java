@@ -61,8 +61,7 @@ public class BuyingTest {
         String price = orderConfirmPage.getPriceElement();
         String reference = orderConfirmPage.getOrderReferenceElement();
 
-        ScreenShot shot = new ScreenShot();
-        shot.makeScreenShot();
+        ScreenShot.makeScreenShot();
 
         orderPage.setUserAccount();
         mainPage.setOrderHistoryElement();
@@ -74,6 +73,6 @@ public class BuyingTest {
 
     @After
     public void tearDown(){
-//        driver.quit();
+        driver.quit();
     }
 }
